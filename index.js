@@ -1,4 +1,4 @@
-//detecting buttonpress on webpage
+
 var drumlength = document.querySelectorAll(".drum").length ;
 for (let x = 0; x < drumlength ;x++) {
     document.querySelectorAll(".drum")[x].addEventListener("click",
@@ -9,7 +9,7 @@ for (let x = 0; x < drumlength ;x++) {
        });    
     
 }
-// detect btn press on keyboard
+
 document.addEventListener("keydown",function (event) {
    sound(event.key);
    buttonAnimation(event.key);
@@ -58,21 +58,3 @@ function sound(key){
       break;
   }}
 
-//------------------------------------------------------------------------------------------------------------------
-// function clickme(){
-//     var buttonInnerHTML = document.querySelectorAll(".drum").innerHTML;
-// // no idea why this statement didnt work --> var buttonInnerHTML = document.querySelectorAll(".drum").innerHTML;
-
-//     switch( buttonInnerHTML ) {
-    // same switch cases
-// }}
-// for (let x = 0; x < drumlength ;x++) {
-//     document.querySelectorAll(".drum")[x].addEventListener("click",clickme())}
-//------------------------------------------------------------------------------------------------------------------
-
-
-// my while loop creates infinite loops
-// var i = 0;
-// while ( i < drumlength ) {
-//     document.querySelectorAll(".drum")[i].addEventListener("click",clickme);
-// }
